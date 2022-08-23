@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Uke 2/Programmering'
+rm -f gruppeoppgave
+gcc gruppeoppgave.c -o gruppeoppgave
+make: Leaving directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Uke 2/Programmering'
+ 

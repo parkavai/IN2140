@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Oblig-2'
+make: Leaving directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Oblig-2'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+ 

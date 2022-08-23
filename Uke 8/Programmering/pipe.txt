@@ -1,0 +1,6 @@
+Hva er pipe?
+Pipe er en postkasse i operativsystemet som man kan skrive til og 
+skrive fra. Når vi har to prosesser så kan begge prosessene kommunisere 
+gjennom denne postkassen hvor den ene skriver til postkassen, imens den andre 
+leser fra postkassen. Det er ikke mulig for begge prosessene og skrive samtidig 
+eller lese samtidig. Det er kun slik at den ene skriver og den andre leser. 

@@ -1,0 +1,1 @@
+scp -p  Makefile test.c superblock parkavai@login.ifi.uio.no:~/IN2140

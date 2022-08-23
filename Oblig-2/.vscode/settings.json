@@ -1,0 +1,7 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "__locale": "c",
+        "locale": "c"
+    }
+}

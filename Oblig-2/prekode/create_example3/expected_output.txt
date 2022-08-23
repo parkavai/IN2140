@@ -1,0 +1,40 @@
+$ valgrind --track-origins=yes --malloc-fill=0x40 --free-fill=0x23 --leak-check=full --show-leak-kkinds=all ./create_fs 
+==1978329== Memcheck, a memory error detector
+==1978329== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1978329== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==1978329== Command: ./create_fs
+==1978329== 
+Disk:
+00000000000000000000000000000000000000000000000000
+/ (id 0)
+  root (id 1)
+    bashrc (id 7 size 100b blocks 0 )
+    profile (id 8 size 100b blocks 1 )
+  home (id 2)
+    guest (id 3)
+      bashrc (id 9 size 100b blocks 2 )
+      profile (id 10 size 100b blocks 3 )
+    user (id 4)
+      Download (id 6)
+        oblig2 (id 13 size 163033b blocks 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 )
+      bashrc (id 11 size 100b blocks 4 )
+      profile (id 12 size 100b blocks 5 )
+    print (id 5)
+Disk:
+11111111111111111111111111111111111111111111110000
++++++++++++++++++++++++++++++++++++++++++++
++ All inodes structures have been         +
++ deleted. The inode info is stored in    +
++ superblock. The allocated file blocks   +
++ are stored in block_allocation_table    +
++++++++++++++++++++++++++++++++++++++++++++
+==1978329== 
+==1978329== HEAP SUMMARY:
+==1978329==     in use at exit: 0 bytes in 0 blocks
+==1978329==   total heap usage: 288 allocs, 288 frees, 829,268 bytes allocated
+==1978329== 
+==1978329== All heap blocks were freed -- no leaks are possible
+==1978329== 
+==1978329== For lists of detected and suppressed errors, rerun with: -s
+==1978329== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+

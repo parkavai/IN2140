@@ -1,0 +1,24 @@
+# Denne regelen sier at hello_world skal oppdateres hvis hello_world.c
+# har forandret seg siden sist vi oppdaterte hello_world.
+#
+# En regel består av 3 delere
+# Den første delen er filen som produseres (ikke-eksisterende fører til kompilering hver gang)
+# Filen som produseres kalles for target.
+# Den andre delen er filene som target avhenger av. Hvis en eller flere av disse filene
+# har forandret seg så vil den tredje delene, kommandoene, kjøres på nytt.
+# Den tredje delen er kommandoer som vil lage en ny versjon av target.
+# Det er vanligvis en kompilering med target som output.
+hello_world: hello_world.c
+	gcc -o hello_world -g hello_world.c
+
+# Denne regelen kan sjekkes ved å kjøre make run.
+# Den vil kjøre programmet etter en eventuell rekompilering pga evhengigheten
+# En target trenger ikke å være en fil, men da vil kommandoene kjøres hver gang
+# man sjekker targeten ved å skrive make run. (samme med make clean)
+run: hello_world
+	./hello_world
+
+# Kanskje du kan legge til en target for kompakt_intro.c?
+
+clean:
+	rm -f ./hello_world
