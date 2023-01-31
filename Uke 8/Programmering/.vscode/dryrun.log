@@ -1,0 +1,4 @@
+make: Entering directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Uke 8/Programmering'
+gcc -g pipefork.c -o test
+make: Leaving directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Uke 8/Programmering'
+ 

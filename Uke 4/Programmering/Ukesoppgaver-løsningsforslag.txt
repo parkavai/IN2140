@@ -1,0 +1,3 @@
+Oppgaver: https://github.uio.no/IN2140v2/in2140-v21/tree/master/cbra/uke04-structs
+
+Løsningsforslag: https://github.uio.no/IN2140v2/in2140-v21/tree/master/cbra/uke04-structs/losningsforslag

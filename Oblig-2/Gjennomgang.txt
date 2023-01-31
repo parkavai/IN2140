@@ -1,0 +1,18 @@
+Hva er entries som ligger på disk?
+Disse er ID´er, som referer til andre inoders ID. Disse entriesene 
+som leses fra disk, er da ID´er. 
+
+Hva er 2 bytene etter roten?
+Disse er entries-pekere, så det som kommer etter lengden entries, er da 
+entries-pekere. 
+
+Hva skal vi med de 2 bytene etter roten?
+De er ID´er til andre directory eller filer. 
+
+Hvordan allokere plass til inodene i lesing av superblokkfilen?
+Enten ved bruk av reallokering eller at man først leser inn hele filen 
+for å telle antall inoder. 
+
+Etter at du har lest inn en inode fra superblokkfilen, så vil man automatisk 
+lese inn neste inode, dette var noe du lurte på for da hadde du tanken om 
+å løse problemet rekursivt, men det behøves ikke.  

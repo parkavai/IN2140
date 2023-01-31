@@ -1,0 +1,8 @@
+Hva er fork?
+Fork er en metode som splitter programmet i to hvor enhver prosess kan da utfører 
+programmet i to forskjellige måter. Hvis du husker fra andre forelesning, så 
+var det slik at vi hadde et program med en prosess men ved kall på fork() så vil vi 
+kunne duplisere denne prosessen med en ny en og kjøre de samme instruksene. Men det er
+mulig for prosessen som ble nettopp lagd, til å eksekvere et nytt program eller ikke, det 
+er opptil brukeren. Nå du kaller på fork(), så vil den nye prosessen bli en "child", mens
+den som kalte på fork(), blir "parent". 

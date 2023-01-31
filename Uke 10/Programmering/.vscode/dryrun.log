@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Uke 10/Programmering'
+gcc -g -std=gnu11 -Wall -Wextra client.c -o client
+gcc -g -std=gnu11 -Wall -Wextra server.c -o server
+make: Leaving directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Uke 10/Programmering'
+ 

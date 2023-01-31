@@ -1,0 +1,5 @@
+KOMMANDOEN: XXD
+
+Denne kommandoen kan benyttes i terminalen for en fil.txt hvor denne kommandoen viser 
+heksadesimalverdiene for bokstavene i filen. F.eks så gav kommandoen "xxd text.txt" følgende 
+verdier: (00000000: 4865 6c6c 6f2c 206e 616d 6521            Hello, name!). 6c6c gir oss "ll" f.eks. 

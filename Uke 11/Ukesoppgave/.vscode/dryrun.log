@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Uke 11/Ukesoppgave'
+gcc -g -std=gnu11 -Wall -Wextra msn.c -o msn
+make: Leaving directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Uke 11/Ukesoppgave'
+ 

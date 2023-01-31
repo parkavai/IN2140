@@ -1,0 +1,42 @@
+$ valgrind --track-origins=yes --malloc-fill=0x40 --free-fill=0x23 --leak-check=full --show-leakk-kinds=all ../private/load_fs 
+==1974559== Memcheck, a memory error detector
+==1974559== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1974559== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==1974559== Command: ../private/load_fs
+==1974559== 
+===================================
+= Load all inodes from the file   =
+= superblock                      =
+===================================
+/ (id 0)
+  etc (id 1)
+    hosts (id 10 size 200b blocks 44 )
+  share (id 2)
+    man (id 3)
+      read.2 (id 11 size 300b blocks 45 )
+      write.2 (id 12 size 400b blocks 46 )
+  var (id 4)
+    log (id 5)
+      message (id 7 size 50000b blocks 5 6 7 8 9 10 11 12 13 14 15 16 17 )
+      warn (id 8 size 50000b blocks 18 19 20 21 22 23 24 25 26 27 28 29 30 )
+      fail (id 9 size 50000b blocks 31 32 33 34 35 36 37 38 39 40 41 42 43 )
+  kernel (id 6 size 20000b blocks 0 1 2 3 4 )
+Disk:
+11111111111111111111111111111111111111111111111000
+===================================
+= Trying to find some files.      =
+===================================
+Found /kernel
+Found /var/log/messages
+Found /share/man/read.2
+Found /etc/hosts
+==1974559== 
+==1974559== HEAP SUMMARY:
+==1974559==     in use at exit: 0 bytes in 0 blocks
+==1974559==   total heap usage: 51 allocs, 51 frees, 19,784 bytes allocated
+==1974559== 
+==1974559== All heap blocks were freed -- no leaks are possible
+==1974559== 
+==1974559== For lists of detected and suppressed errors, rerun with: -s
+==1974559== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+

@@ -1,0 +1,2 @@
+Oppgaver med løsningsforslag
+https://github.uio.no/IN2140v2/in2140-v22/tree/gh-pages/c-programmering/eksempler/cbra-2021/uke03-malloc

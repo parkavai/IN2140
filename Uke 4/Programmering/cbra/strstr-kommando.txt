@@ -1,0 +1,5 @@
+Denne kommandoen hjelper oss med å finne en substring innenfor en streng. F.eks om jeg skriver følgende:
+
+char* name = strstr(buf, "name");
+
+så vil vi da hente ut "name" fra bufferet med andre linjer inkludert "name" også."

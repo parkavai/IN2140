@@ -1,0 +1,8 @@
+Å utføre systemkall for hver gang vi skal lese fra en fil, kan bli problematisk siden 
+kallene gjøres i OS og kan forekomme tilfeller hvor fil-blokker ikke er lagret i minne 
+men i disk. Kan da bli problematisk hvis vi skal gjøre dette for hver gang. Derfor lager 
+man et buffer hvor vi da lagrer filen inn i bufferet og da slipper man å utføre systemkall 
+for hver gang siden vi bare bruker bufferet til å hente verdiene fra filen. 
+
+"buffered.c" er dermed den mest aktuelle beskrivelsen av filinnlesing for obligen så denne 
+burde du se på. 

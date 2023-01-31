@@ -1,0 +1,19 @@
+Hva er en headerfile?
+
+- Kan sees som et interface hvor vi definerer funkskjoner uten innmat og 
+  inkluderer biblioteker som <stdio.h>
+  
+- Må huske følgende funksjonsdeklarasjoner som: #ifndef, #define, #endif
+
+Eksempel på headerfile:
+
+#ifndef MY_SHARED_HEADER
+#define MY_SHARED_HEADER
+
+/* includes */
+#include <stdio.h>
+
+/* declarations */
+void fun_functionality_function(int a, int b);
+
+#endif

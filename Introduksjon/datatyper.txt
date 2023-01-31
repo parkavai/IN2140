@@ -1,0 +1,26 @@
+char c;				// 1 byte	range = -128 - 127
+short s;			// 2 bytes
+int i;				// 4 bytes
+long l;				// 8 bytes
+// avslutt en long med L
+long l = 11122233344L
+
+// unsigned er like mange bytes, men er bare positive tall.
+// saa i signed brukes foerste biten til aa si om tallet er positivt
+// eller negativt
+unsigned char uc; 	// 1 byte	range = 0-255
+
+sizeof(int); // - brukes til å finne stoerrelsen på datatyper
+
+char c = 'c';			// single quotes for character
+char *my_string = "Hei!";		// double quotes for string
+
+//10-talls system
+char a = 10;
+//2-talls system
+char b = 0b1010;
+//hex system
+char c = 0x0A;
+
+printf("a: %d\nb: %d\nc: %d\n", a, b, c);
+// Arrays

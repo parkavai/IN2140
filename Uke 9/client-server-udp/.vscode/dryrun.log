@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Uke 9/client-server-udp'
+gcc server.c -c -o server.o -Wall -Wextra -O2 -g
+gcc server.o -o server -Wall -Wextra -O2 -g
+make: Leaving directory `/Users/parkavanillavalagan/Library/CloudStorage/OneDrive-Personlig/Informatikk/IFI-2.året/IN2140/Uke 9/client-server-udp'
+ 
